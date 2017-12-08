@@ -1,0 +1,34 @@
+{
+  "name": "version-webpack-plugin",
+  "version": "0.0.3",
+  "description": "webpack plugin for version",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/s249359986/version-webpack-plugin"
+  },
+  "keywords": [
+    "webpack",
+    "plugin",
+    "webpack-plugin",
+    "version"
+  ],
+  "author": "7ke",
+  "license": "MIT",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "dependencies": {
+    "sversion": "^0.0.2"
+  },
+  "devDependencies": {
+    "eslint": "^3.3.0",
+    "eslint-config-jr": "^1.0.0",
+    "sversion": "^0.0.2"
+  }
+}
