@@ -6,7 +6,8 @@ const path = require('path');
 const webpack = require('webpack');
 const ExtractTextPlugin = require("extract-text-webpack-plugin"); // 单独打包CSS
 const HtmlWebpackPlugin = require('html-webpack-plugin'); // Html文件处理
-const vConsolePlugin = require('../../index.js');
+//const sVersion = require('../../index.js');
+const sVersion = require('version-webpack-plugin');
 
 
 // 接收运行参数
@@ -33,7 +34,7 @@ module.exports = {
     //   filename:"common.js"
     // }), // 分析以下模块的共用代码,单独打一个包到common.js
 
-    new vConsolePlugin({enable:true}),
+    new sVersion({enable:true}),
 
     // 单独打包CSS
     new ExtractTextPlugin('[name].css', {allChunks: true}),
