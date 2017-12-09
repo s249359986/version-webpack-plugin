@@ -1,9 +1,4 @@
-
-
-
-
 'use strict';
-
 const path = require('path');
 const fs = require('fs');
 function sVersionPlugin(options) {
@@ -15,7 +10,7 @@ function sVersionPlugin(options) {
 sVersionPlugin.prototype.apply = function(compiler) {
     const enable = this.options.enable;
     const _root = module.paths.find(path => fs.existsSync(path));
-   const pathVconsole = path.join(_root, '/sversion/dist/sversion.min.js');   
+   const pathVconsole = path.join(_root, '/sversion/dist/sversion.min.js');
 const pathTemp = path.resolve(__dirname,'./dist/temp.js');
 compiler.plugin('entry-option', function() {
     if (enable) {

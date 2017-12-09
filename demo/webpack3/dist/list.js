@@ -76,13 +76,13 @@ module.exports = __webpack_require__(3);
 /* 1 */
 /***/ (function(module, exports) {
 
-window.sversionId="0.12.1205"
+window.sversionId="0.12.634"
 
 /***/ }),
 /* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
-/*! sVersion v0.0.1 (https://github.com/s249359986/sVersion) */
+/*! sVersion v0.0.4 (https://github.com/s249359986/sVersion) */
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(true)
 		module.exports = factory();
@@ -337,8 +337,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	        tool.setStorage('switch_y', that.switchPos.y);
 	      });
 	      _query2.default.bind($switch, 'touchmove', function (e) {
-	        console.log('-------------------');
-	        console.log("ghh23423");
 	        if (e.touches.length > 0) {
 	          var offsetX = e.touches[0].pageX - that.switchPos.startX,
 	              offsetY = e.touches[0].pageY - that.switchPos.startY;
@@ -520,7 +518,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 2 */
 /***/ function(module, exports) {
 
-	module.exports = {"name":"sversion","version":"0.0.1","description":"A lightweight, extendable front-end developer tool for version","homepage":"https://github.com/s249359986/sVersion","main":"dist/sVersion.min.js","scripts":{"test":"mocha","dist":"webpack"},"keywords":["console","debug","mobile"],"repository":{"type":"git","url":"git+https://github.com/s249359986/sVersion.git"},"dependencies":{},"devDependencies":{"babel-core":"^6.7.7","babel-loader":"^6.2.4","babel-plugin-add-module-exports":"^0.1.4","babel-preset-es2015":"^6.6.0","babel-preset-stage-3":"^6.5.0","chai":"^3.5.0","css-loader":"^0.23.1","extract-text-webpack-plugin":"^1.0.1","html-loader":"^0.4.3","jsdom":"^9.2.1","json-loader":"^0.5.4","less":"^2.5.3","less-loader":"^2.2.3","mocha":"^2.5.3","style-loader":"^0.13.1","webpack":"~1.12.11"},"author":"7ke","license":"MIT"}
+	module.exports = {"name":"sversion","version":"0.0.4","description":"A lightweight, extendable front-end developer tool for version","homepage":"https://github.com/s249359986/sVersion","main":"dist/sVersion.min.js","scripts":{"test":"mocha","dist":"webpack"},"keywords":["console","debug","mobile"],"repository":{"type":"git","url":"git+https://github.com/s249359986/sVersion.git"},"dependencies":{},"devDependencies":{"babel-core":"^6.7.7","babel-loader":"^6.2.4","babel-plugin-add-module-exports":"^0.1.4","babel-preset-es2015":"^6.6.0","babel-preset-stage-3":"^6.5.0","chai":"^3.5.0","css-loader":"^0.23.1","extract-text-webpack-plugin":"^1.0.1","html-loader":"^0.4.3","jsdom":"^9.2.1","json-loader":"^0.5.4","less":"^2.5.3","less-loader":"^2.2.3","mocha":"^2.5.3","style-loader":"^0.13.1","webpack":"~1.12.11"},"author":"7ke","license":"MIT"}
 
 /***/ },
 /* 3 */
@@ -1037,7 +1035,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 	// module
-	exports.push([module.id, "#__sversion {\n  color: #000;\n  font-size: 13px;\n  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;\n  /* global */\n  /* compoment */\n}\n#__sversion .vc-max-height {\n  max-height: 19.23076923em;\n}\n#__sversion .vc-max-height-line {\n  max-height: 3.38461538em;\n}\n#__sversion .vc-min-height {\n  min-height: 3.07692308em;\n}\n#__sversion dd,\n#__sversion dl,\n#__sversion pre {\n  margin: 0;\n}\n#__sversion .vc-switch {\n  display: block;\n  position: fixed;\n  right: 0.76923077em;\n  bottom: 0.76923077em;\n  color: #FFF;\n  background-color: #04BE02;\n  line-height: 1;\n  font-size: 1.07692308em;\n  padding: 0.61538462em 1.23076923em;\n  z-index: 10000;\n  border-radius: 0.30769231em;\n  box-shadow: 0 0 0.61538462em rgba(0, 0, 0, 0.4);\n}\n#__sversion .vc-mask {\n  display: none;\n  position: fixed;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  background: rgba(0, 0, 0, 0);\n  z-index: 9999;\n  transition: background .3s;\n  -webkit-tap-highlight-color: transparent;\n  overflow-y: scroll;\n}\n#__sversion .vc-panel {\n  border-radius: 5px;\n  z-index: 9999;\n  position: absolute;\n  display: none;\n  top: 50%;\n  left: 50%;\n  transform: translateX(-50%) translateY(-50%);\n  background-color: rgba(38, 45, 38, 0.9);\n  color: #fff;\n  font-size: 20px;\n  padding: 10px;\n}\n", ""]);
+	exports.push([module.id, "#__sversion {\n  color: #000;\n  font-size: 13px;\n  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;\n  /* global */\n  /* compoment */\n}\n#__sversion dd,\n#__sversion dl,\n#__sversion pre {\n  margin: 0;\n}\n#__sversion .vc-switch {\n  display: block;\n  position: fixed;\n  right: 0.76923077em;\n  bottom: 0.76923077em;\n  color: #FFF;\n  background-color: #292d29;\n  line-height: 1;\n  font-size: 2.30769231em;\n  padding: 0.07692308em 0.30769231em;\n  z-index: 10000;\n  border-radius: 0.76923077em;\n  box-shadow: 0 0 0.61538462em rgba(0, 0, 0, 0.4);\n}\n#__sversion .vc-mask {\n  display: none;\n  position: fixed;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  background: rgba(0, 0, 0, 0);\n  z-index: 9999;\n  transition: background .3s;\n  -webkit-tap-highlight-color: transparent;\n  overflow-y: scroll;\n}\n#__sversion .vc-panel {\n  border-radius: 5px;\n  z-index: 9999;\n  position: absolute;\n  display: none;\n  top: 50%;\n  left: 50%;\n  transform: translateX(-50%) translateY(-50%);\n  background-color: rgba(38, 45, 38, 0.9);\n  color: #fff;\n  font-size: 20px;\n  padding: 10px;\n}\n", ""]);
 
 	// exports
 
@@ -1353,7 +1351,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 10 */
 /***/ function(module, exports) {
 
-	module.exports = "<div id=\"__sversion\" class=\"\">\n  <div class=\"vc-switch\">当前版本</div>\n  <div class=\"vc-panel\">未设置版本\n  </div>\n  <div class=\"vc-mask\">\n  </div>\n</div>\n";
+	module.exports = "<div id=\"__sversion\" class=\"\">\n  <div class=\"vc-switch\">v</div>\n  <div class=\"vc-panel\">未设置版本\n  </div>\n  <div class=\"vc-mask\">\n  </div>\n</div>\n";
 
 /***/ }
 /******/ ])
