@@ -1,6 +1,6 @@
 {
   "name": "version-webpack-plugin",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "webpack plugin for version",
   "main": "index.js",
   "scripts": {
@@ -24,7 +24,7 @@
   },
   "homepage": "",
   "dependencies": {
-    "sversion": "^0.0.5"
+    "sversion": "^0.0.6"
   },
   "devDependencies": {
     "eslint": "^3.3.0",
