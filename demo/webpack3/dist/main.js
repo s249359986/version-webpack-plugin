@@ -60,26 +60,17 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-__webpack_require__(1);
-__webpack_require__(2);
-module.exports = __webpack_require__(3);
-
+window.sversionId = "0.12.9.1098";
 
 /***/ }),
 /* 1 */
-/***/ (function(module, exports) {
-
-window.sversionId="0.12.9.1101"
-
-/***/ }),
-/* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*! sVersion v0.0.4 (https://github.com/s249359986/sVersion) */
@@ -1359,14 +1350,15 @@ return /******/ (function(modules) { // webpackBootstrap
 ;
 
 /***/ }),
-/* 3 */
-/***/ (function(module, exports) {
+/* 2 */,
+/* 3 */,
+/* 4 */
+/***/ (function(module, exports, __webpack_require__) {
 
-/**
- * Created by Chenjr on 2015/7/9.
- */
+__webpack_require__(0);
+__webpack_require__(1);
+(function webpackMissingModule() { throw new Error("Cannot find module \"test\""); }());
 
-console.log('hello world');
 
 /***/ })
 /******/ ]);

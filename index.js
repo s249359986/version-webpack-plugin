@@ -14,10 +14,12 @@ sVersionPlugin.prototype.apply = function(compiler) {
 const pathTemp = path.resolve(__dirname,'./dist/temp.js');
 compiler.plugin('entry-option', function() {
     if (enable) {
-        let versionFirst = new Date().getFullYear() - 2017
-        let versionSecond = new Date().getMonth() + 1
-        let versionThree = new Date().getHours() * 60 + new Date().getMinutes()
-        let versionNumber = versionFirst + "." + versionSecond + "." + versionThree
+        let dateObj = new Date()
+        let versionFirst = dateObj.getFullYear() - 2017
+        let versionSecond = dateObj.getMonth() + 1
+        let versionThree = dateObj.getDate()
+        let versionFour = dateObj.getHours() * 60 + dateObj.getMinutes()
+        let versionNumber = versionFirst + "." + versionSecond + "." + versionThree + "." + versionFour
         let versionStr = "window.sversionId=" + String('"'+versionNumber+'"')
         fs.writeFileSync(pathTemp,versionStr, 'utf8');
         console.log("-------临时版本号："+versionNumber +"----------")

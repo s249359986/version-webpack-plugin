@@ -1,6 +1,6 @@
 {
   "name": "version-webpack-plugin",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "webpack plugin for version",
   "main": "index.js",
   "scripts": {
