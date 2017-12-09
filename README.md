@@ -3,11 +3,14 @@
 npm run install version-webpack-plugin --save-dev
 ## use
 ```
+enable:插件是否可用。默认为false
+options:{enable:Boolean}
+
 webpack 配置文件中引入插件
 const sVersionPlugin = require('version-webpack-plugin')
 plugins: [
      new sVersionPlugin({
-            enable: true // 临时版本插件false
+            enable: true // 根据环境动态修改可用性
         })
 ]
 ```
