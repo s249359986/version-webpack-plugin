@@ -20,7 +20,8 @@ compiler.plugin('entry-option', function() {
         let versionThree = dateObj.getDate()
         let versionFour = dateObj.getHours() * 60 + dateObj.getMinutes()
         let versionNumber = versionFirst + "." + versionSecond + "." + versionThree + "." + versionFour
-        let versionStr = "window.sversionId=" + String('"'+versionNumber+'"')
+        let sversionTime = (dateObj.getMonth()+1) + '月' + dateObj.getDate() + '日' + dateObj.getHours() + '时' + dateObj.getMinutes() + '分'
+        let versionStr = "window.sversionId=" + String('"'+versionNumber+'"') + "\n" + "window.sversionTime=" + String('"'+sversionTime+'"')        
         fs.writeFileSync(pathTemp,versionStr, 'utf8');
         console.log("-------临时版本号："+versionNumber +"----------")
         if (Object.prototype.toString.call(this.options.entry) === '[object Array]') {

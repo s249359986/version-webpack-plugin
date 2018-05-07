@@ -6,8 +6,8 @@ const path = require('path');
 const webpack = require('webpack');
 const ExtractTextPlugin = require("extract-text-webpack-plugin"); // 单独打包CSS
 const HtmlWebpackPlugin = require('html-webpack-plugin'); // Html文件处理
-//const sVersion = require('../../index.js');
-const sVersion = require('version-webpack-plugin');
+const sVersion = require('../../index.js');
+// const sVersion = require('version-webpack-plugin');
 
 
 // 接收运行参数
